@@ -21,6 +21,14 @@ public class Music {
     copies = 0;
     }
 
+  Music(String thisAlbum, String thisArtist, String thisGenre, String thisMedia) {
+	this();
+	album = thisAlbum;
+	artist = thisArtist;
+	genre = thisGenre;
+	media = thisMedia;
+	}	
+
   public String toString() {
     String output = "";
     output = "Album: " + album + " Artist: " + artist + " Genre: " + genre + " Media: " + media + " Location: " + location + " Copies: " + copies;
